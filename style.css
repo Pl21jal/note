@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: white;
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+.container {
+  padding: 20px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #ffd700; /* warna kuning khas iPhone Notes */
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+p {
+  font-size: 20px;
+  color: white;
+  margin: 0;
+}
