@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catatan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <span class="back">‹ Semua iCloud</span>
+      <span class="jam">03.11</span>
+    </div>
+    <h1>Makanan</h1>
+    <p><span id="typing"></span></p>
+  </div>
+
+  <script>
+    const text = "merdeka";
+    let i = 0;
+    const speed = 150;
+    const typingElement = document.getElementById("typing");
+
+    function typeWriter() {
+      if (i < text.length) {
+        typingElement.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    typeWriter();
+  </script>
+</body>
+</html>
